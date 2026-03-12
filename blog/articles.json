@@ -1,0 +1,34 @@
+{
+    "articles": [
+        {
+            "id": "que-es-el-emprendimiento",
+            "title": "¿Qué es el Emprendimiento?",
+            "excerpt": "Descubre los fundamentos del emprendimiento, por qué es importante y cómo puedes dar tus primeros pasos para convertir una idea en un negocio exitoso.",
+            "date": "2026-03-10",
+            "author": "CEDEMCO",
+            "category": "Fundamentos",
+            "image": "images/blog/emprendimiento.png",
+            "file": "blog/que-es-el-emprendimiento.md"
+        },
+        {
+            "id": "como-crear-plan-de-negocios",
+            "title": "Cómo Crear tu Plan de Negocios",
+            "excerpt": "Aprende a estructurar un plan de negocios sólido que te ayudará a definir tu estrategia, atraer inversionistas y guiar el crecimiento de tu empresa.",
+            "date": "2026-03-08",
+            "author": "CEDEMCO",
+            "category": "Estrategia",
+            "image": "images/blog/plan-de-negocios.png",
+            "file": "blog/como-crear-plan-de-negocios.md"
+        },
+        {
+            "id": "fuentes-de-financiamiento",
+            "title": "Fuentes de Financiamiento para Emprendedores",
+            "excerpt": "Conoce las principales opciones de financiamiento disponibles para emprendedores en México: desde programas gubernamentales hasta inversionistas ángeles.",
+            "date": "2026-03-05",
+            "author": "CEDEMCO",
+            "category": "Finanzas",
+            "image": "images/blog/financiamiento.png",
+            "file": "blog/fuentes-de-financiamiento.md"
+        }
+    ]
+}
