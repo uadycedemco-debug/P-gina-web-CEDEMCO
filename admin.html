@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Artículo | CEDEMCO Admin</title>
+    <link rel="icon" type="image/png" href="images/CEDEMCO_LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN SIMPLE -->
+    <nav class="nav-container">
+        <div class="nav-top">
+            <div class="nav-col nav-col-left">
+                <a href="index.html" style="font-size:0.85rem;color:var(--cedemco-blue);font-weight:600;">
+                    <i class="fa-solid fa-arrow-left"></i> Volver al sitio
+                </a>
+            </div>
+            <div class="nav-col nav-col-center">
+                <a href="index.html"><img src="images/CEDEMCO_LOGO.png" alt="CEDEMCO" class="nav-logo"></a>
+            </div>
+            <div class="nav-col nav-col-right"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HEADER -->
+        <header class="page-header">
+            <span class="hero-badge" style="margin-bottom:1rem;">
+                <i class="fa-solid fa-shield-halved"></i> Herramienta Interna
+            </span>
+            <h1>CREAR ARTÍCULO</h1>
+            <p>Escribe un artículo para el blog sin necesidad de programar. Sigue los pasos a continuación.</p>
+        </header>
+
+        <!-- INSTRUCCIONES -->
+        <section class="section">
+            <div class="container" style="max-width:900px;">
+
+                <div class="section-header">
+                    <span class="section-tag">Instrucciones</span>
+                    <h2>¿CÓMO FUNCIONA?</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="admin-steps" style="margin-bottom:3rem;">
+                    <div class="admin-step">
+                        <strong>Escribe tu artículo</strong> usando el editor de abajo. Puedes usar negritas, títulos y listas.
+                    </div>
+                    <div class="admin-step">
+                        <strong>Llena los datos del artículo:</strong> título, categoría, extracto (resumen corto) e imagen.
+                    </div>
+                    <div class="admin-step">
+                        <strong>Haz clic en "Generar Archivos"</strong> y se descargarán automáticamente los archivos necesarios.
+                    </div>
+                    <div class="admin-step">
+                        <strong>Sube los archivos a GitHub:</strong>
+                        <ul style="margin-top:0.75rem;list-style:disc;padding-left:1.5rem;">
+                            <li style="margin-bottom:0.5rem;">Ve a tu repositorio en <a href="https://github.com" target="_blank" style="color:var(--cedemco-gold);text-decoration:underline;">github.com</a></li>
+                            <li style="margin-bottom:0.5rem;">Sube el archivo <code>.md</code> descargado a la carpeta <code>blog/</code></li>
+                            <li style="margin-bottom:0.5rem;">Abre el archivo <code>blog/articles.json</code>, dale clic en el lápiz (editar), y pega la línea JSON generada</li>
+                            <li>Si tienes imagen, súbela a <code>images/blog/</code></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FORMULARIO DEL ARTÍCULO -->
+                <div style="background:var(--cedemco-gray-50);border-radius:var(--radius-lg);padding:2.5rem;border:1px solid var(--cedemco-gray-100);">
+                    <h3 style="margin-bottom:2rem;">DATOS DEL ARTÍCULO</h3>
+
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label class="form-label" for="art-title">Título del Artículo *</label>
+                            <input type="text" id="art-title" class="form-input" placeholder="Ej: 10 Tips para Emprendedores">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="art-category">Categoría *</label>
+                            <select id="art-category" class="form-input">
+                                <option value="Fundamentos">Fundamentos</option>
+                                <option value="Estrategia">Estrategia</option>
+                                <option value="Finanzas">Finanzas</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Tecnología">Tecnología</option>
+                                <option value="General">General</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="art-excerpt">Extracto / Resumen Corto *</label>
+                        <input type="text" id="art-excerpt" class="form-input" placeholder="Un resumen de 1-2 líneas de lo que trata el artículo" maxlength="200">
+                        <span class="small-text" style="margin-top:0.25rem;display:block;">Máximo 200 caracteres. Este texto aparece en la tarjeta del blog.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="art-author">Autor</label>
+                        <input type="text" id="art-author" class="form-input" value="CEDEMCO" placeholder="Ej: CEDEMCO">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="art-image">Nombre del archivo de imagen (opcional)</label>
+                        <input type="text" id="art-image" class="form-input" placeholder="Ej: mi-imagen.png (sube esta imagen a images/blog/)">
+                        <span class="small-text" style="margin-top:0.25rem;display:block;">Si tienes una imagen, escribe solo el nombre del archivo. Recuerda subirla a la carpeta <code>images/blog/</code> en GitHub.</span>
+                    </div>
+                </div>
+
+                <!-- EDITOR DE CONTENIDO -->
+                <div style="margin-top:2.5rem;">
+                    <h3 style="margin-bottom:1.5rem;">CONTENIDO DEL ARTÍCULO</h3>
+
+                    <div class="admin-toolbar">
+                        <button onclick="insertFormat('**', '**')" title="Negritas"><b>N</b></button>
+                        <button onclick="insertFormat('*', '*')" title="Cursiva"><i>I</i></button>
+                        <button onclick="insertFormat('\n## ', '\n')" title="Título">H2</button>
+                        <button onclick="insertFormat('\n### ', '\n')" title="Subtítulo">H3</button>
+                        <button onclick="insertFormat('\n- ', '\n')" title="Lista">• Lista</button>
+                        <button onclick="insertFormat('\n> ', '\n')" title="Cita">❝ Cita</button>
+                        <button onclick="insertFormat('\n1. ', '\n')" title="Lista numerada">1. Lista</button>
+                    </div>
+                    <textarea id="art-content" class="admin-editor" style="border-top-left-radius:0;border-top-right-radius:0;" placeholder="Escribe tu artículo aquí...
+
+Puedes usar formato Markdown:
+## Esto es un título
+### Esto es un subtítulo
+**Esto es negrita**
+*Esto es cursiva*
+- Esto es una lista
+> Esto es una cita
+
+¡Escribe como si fuera un documento de Word!"></textarea>
+                </div>
+
+                <!-- BOTÓN GENERAR -->
+                <div style="margin-top:2rem;text-align:center;">
+                    <button onclick="generateArticle()" class="btn btn-primary" style="padding:1rem 3rem;font-size:1rem;">
+                        <i class="fa-solid fa-download"></i> Generar Archivos
+                    </button>
+                </div>
+
+                <!-- OUTPUT -->
+                <div id="output-section" style="display:none;margin-top:2.5rem;">
+                    <h3 style="margin-bottom:1rem;">
+                        <i class="fa-solid fa-check-circle" style="color:#25D366;"></i> ¡ARCHIVOS GENERADOS!
+                    </h3>
+
+                    <div style="margin-bottom:1.5rem;">
+                        <p><strong>1. El archivo .md se descargó automáticamente.</strong> Súbelo a la carpeta <code>blog/</code> en GitHub.</p>
+                    </div>
+
+                    <div style="margin-bottom:1.5rem;">
+                        <p><strong>2. Copia esta línea y pégala en <code>blog/articles.json</code>:</strong></p>
+                        <p class="small-text" style="margin:0.5rem 0;">Abre el archivo en GitHub, dale clic al lápiz (editar), busca la última entrada del artículo anterior, agrega una coma al final de esa entrada y pega esta línea después en una línea nueva.</p>
+                        <div class="admin-output" id="json-output"></div>
+                        <button onclick="copyJSON()" class="btn btn-secondary" style="margin-top:0.75rem;padding:0.5rem 1.5rem;font-size:0.8rem;">
+                            <i class="fa-solid fa-copy"></i> Copiar JSON
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function generateSlug(title) {
+            return title.toLowerCase()
+                .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-|-$/g, '');
+        }
+
+        function insertFormat(before, after) {
+            var textarea = document.getElementById('art-content');
+            var start = textarea.selectionStart;
+            var end = textarea.selectionEnd;
+            var selected = textarea.value.substring(start, end);
+            var replacement = before + (selected || 'texto') + after;
+            textarea.value = textarea.value.substring(0, start) + replacement + textarea.value.substring(end);
+            textarea.focus();
+            textarea.selectionStart = start + before.length;
+            textarea.selectionEnd = start + before.length + (selected || 'texto').length;
+        }
+
+        function generateArticle() {
+            var title = document.getElementById('art-title').value.trim();
+            var category = document.getElementById('art-category').value;
+            var excerpt = document.getElementById('art-excerpt').value.trim();
+            var author = document.getElementById('art-author').value.trim() || 'CEDEMCO';
+            var imageName = document.getElementById('art-image').value.trim();
+            var content = document.getElementById('art-content').value.trim();
+
+            if (!title || !excerpt || !content) {
+                alert('Por favor llena al menos: Título, Extracto y Contenido del artículo.');
+                return;
+            }
+
+            var slug = generateSlug(title);
+            var date = new Date().toISOString().split('T')[0];
+            var imagePath = imageName ? 'images/blog/' + imageName : 'images/blog-default.jpg';
+            var filename = slug + '.md';
+
+            // Generate markdown content with title
+            var mdContent = '# ' + title + '\n\n' + content;
+
+            // Download MD file
+            var blob = new Blob([mdContent], { type: 'text/markdown' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url);
+
+            // Generate JSON entry
+            var jsonEntry = {
+                id: slug,
+                title: title,
+                excerpt: excerpt,
+                date: date,
+                author: author,
+                category: category,
+                image: imagePath,
+                file: 'blog/' + filename
+            };
+
+            var jsonText = JSON.stringify(jsonEntry, null, 4);
+
+            // Show output
+            document.getElementById('json-output').textContent = jsonText;
+            document.getElementById('output-section').style.display = 'block';
+            document.getElementById('output-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function copyJSON() {
+            var text = document.getElementById('json-output').textContent;
+            navigator.clipboard.writeText(text).then(function () {
+                alert('¡JSON copiado al portapapeles! Ahora pégalo en articles.json en GitHub.');
+            }).catch(function () {
+                // Fallback
+                var textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                alert('¡JSON copiado!');
+            });
+        }
+    </script>
+</body>
+
+</html>

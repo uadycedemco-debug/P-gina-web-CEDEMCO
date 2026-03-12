@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDEMCO | Centro de Emprendimiento</title>
+    <meta name="description"
+        content="CEDEMCO es un centro de apoyo a los emprendedores. Asesoría empresarial, cursos y acompañamiento para tu negocio.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CEDEMCO | Centro de Emprendimiento">
+    <meta property="og:description"
+        content="Centro de apoyo a emprendedores. Asesoría empresarial, cursos y acompañamiento.">
+    <meta property="og:image" content="images/CEDEMCO_LOGO.png">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CEDEMCO | Centro de Emprendimiento">
+    <meta name="twitter:description"
+        content="Centro de apoyo a emprendedores. Asesoría empresarial, cursos y acompañamiento.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/CEDEMCO_LOGO.png">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Questrial&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ============ NAVEGACIÓN ============ -->
+    <nav class="nav-container" id="main-nav">
+        <!-- Fila superior: hamburguesa/redes | logo | botón contacto -->
+        <div class="nav-top">
+            <div class="nav-col nav-col-left">
+                <button class="hamburger-btn" onclick="toggleMenu()" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-social">
+                    <a href="https://www.facebook.com/CEDEMCOUADY" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cedemco_uady/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-col nav-col-center">
+                <a href="index.html">
+                    <img src="images/CEDEMCO_LOGO.png" alt="CEDEMCO" class="nav-logo">
+                </a>
+            </div>
+            <div class="nav-col nav-col-right">
+                <a href="contacto.html" class="nav-contact-btn">Contáctanos</a>
+            </div>
+        </div>
+        <!-- Fila de enlaces (solo desktop) -->
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Menú Móvil (fullscreen overlay) -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="index.html" class="mobile-menu-link" onclick="toggleMenu()">Inicio</a>
+            <a href="#nosotros" class="mobile-menu-link" onclick="toggleMenu()">Nosotros</a>
+            <a href="#servicios" class="mobile-menu-link" onclick="toggleMenu()">Servicios</a>
+            <a href="blog.html" class="mobile-menu-link" onclick="toggleMenu()">Blog</a>
+            <a href="contacto.html" class="mobile-menu-link" onclick="toggleMenu()">Contacto</a>
+        </div>
+        <div class="mobile-menu-social">
+            <a href="https://www.facebook.com/CEDEMCOUADY" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/cedemco_uady/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Centro de Emprendimiento</span>
+            <h1>IMPULSA TU<br>EMPRENDIMIENTO</h1>
+            <p class="hero-subtitle">
+                CEDEMCO es tu aliado para transformar ideas en negocios exitosos.<br>
+                Asesoría empresarial, capacitación y acompañamiento personalizado.
+            </p>
+            <div class="hero-buttons">
+                <a href="contacto.html" class="btn btn-primary">
+                    <i class="fa-solid fa-rocket"></i> Comienza Ahora
+                </a>
+                <a href="#nosotros" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.3);color:white;">
+                    <i class="fa-solid fa-arrow-down"></i> Conoce Más
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ NOSOTROS ============ -->
+        <section class="section" id="nosotros">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="section-tag">Quiénes Somos</span>
+                    <h2>APOYAMOS A LOS EMPRENDEDORES</h2>
+                    <p>CEDEMCO es un centro de apoyo a los emprendedores, comprometido con el desarrollo y crecimiento
+                        de proyectos innovadores.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="grid-2" style="align-items:center;gap:3rem;">
+                    <div class="animate-fade-in">
+                        <h3 style="margin-bottom:1.5rem;">NUESTRA MISIÓN</h3>
+                        <p style="margin-bottom:1.5rem;">
+                            CEDEMCO es un centro de apoyo a los emprendedores. Dentro de las actividades que se realizan
+                            está la asesoría empresarial, brindando herramientas y conocimientos para que cada
+                            emprendedor pueda llevar su idea al siguiente nivel.
+                        </p>
+
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <strong style="display:block;margin-bottom:0.25rem;">Innovación</strong>
+                                <span class="small-text">Fomentamos la creatividad y el pensamiento emprendedor para
+                                    generar soluciones innovadoras.</span>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <strong style="display:block;margin-bottom:0.25rem;">Acompañamiento</strong>
+                                <span class="small-text">Te guiamos durante todo el proceso de creación y consolidación
+                                    de tu negocio.</span>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <strong style="display:block;margin-bottom:0.25rem;">Crecimiento</strong>
+                                <span class="small-text">Impulsamos el crecimiento empresarial con estrategias
+                                    efectivas y datos concretos.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="animate-fade-in" style="text-align:center;">
+                        <img src="images/CEDEMCO_LOGO.png" alt="CEDEMCO Logo"
+                            style="max-width:400px;width:100%;margin:0 auto;opacity:0.9;" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-bar animate-fade-in" style="margin-top:3rem;">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="150" data-suffix="+">0</div>
+                        <div class="stat-label">Emprendedores Asesorados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50" data-suffix="+">0</div>
+                        <div class="stat-label">Proyectos Incubados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="30" data-suffix="+">0</div>
+                        <div class="stat-label">Talleres Impartidos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5" data-suffix="">0</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SERVICIOS ============ -->
+        <section class="section-alt" id="servicios">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="section-tag">Nuestros Servicios</span>
+                    <h2>¿CÓMO TE PODEMOS AYUDAR?</h2>
+                    <p>Ofrecemos una variedad de servicios diseñados para potenciar tu emprendimiento en cada etapa de su
+                        desarrollo.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="grid-3 animate-fade-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h3 class="card-title">Asesoría Empresarial</h3>
+                            <p class="card-text">Recibe orientación personalizada para desarrollar tu modelo de negocio,
+                                estrategia comercial y plan financiero.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="card-title">Capacitación</h3>
+                            <p class="card-text">Talleres, cursos y seminarios sobre temas clave para emprendedores:
+                                finanzas, marketing, legalidad y más.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <h3 class="card-title">Incubación</h3>
+                            <p class="card-text">Acompañamiento integral para convertir tu idea en una empresa formal,
+                                desde la conceptualización hasta el lanzamiento.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+                            <h3 class="card-title">Networking</h3>
+                            <p class="card-text">Conecta con otros emprendedores, mentores e inversionistas a través de
+                                nuestros eventos y comunidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <h3 class="card-title">Plan de Negocios</h3>
+                            <p class="card-text">Te ayudamos a estructurar un plan de negocios sólido que convenza a
+                                inversionistas y guíe tu operación.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3 class="card-title">Transformación Digital</h3>
+                            <p class="card-text">Integra herramientas digitales en tu negocio: presencia en línea,
+                                e-commerce, redes sociales y automatización.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ BLOG PREVIEW ============ -->
+        <section class="section" id="blog-preview">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="section-tag">Blog</span>
+                    <h2>ARTÍCULOS PARA EMPRENDEDORES</h2>
+                    <p>Contenido valioso sobre emprendimiento, negocios y crecimiento profesional.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="grid-3" id="blog-preview-grid">
+                    <!-- Artículos cargados dinámicamente -->
+                </div>
+
+                <div class="text-center animate-fade-in" style="margin-top:2.5rem;">
+                    <a href="blog.html" class="btn btn-outline-gold">
+                        <i class="fa-solid fa-newspaper"></i> Ver Todos los Artículos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACTO RÁPIDO ============ -->
+        <section class="section-alt" id="contacto-rapido">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="section-tag">Contacto</span>
+                    <h2>¿LISTO PARA EMPRENDER?</h2>
+                    <p>Estamos aquí para ayudarte. Escríbenos por WhatsApp, correo electrónico o llena nuestro
+                        formulario.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="grid-3 animate-fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3 class="card-title">WhatsApp</h3>
+                        <p class="card-text" style="margin-bottom:1.5rem;">Escríbenos directamente y recibe atención
+                            inmediata.</p>
+                        <a href="javascript:void(0)" onclick="openWhatsApp()" class="btn btn-whatsapp"
+                            style="width:100%;">
+                            <i class="fa-brands fa-whatsapp"></i> Enviar Mensaje
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3 class="card-title">Correo</h3>
+                        <p class="card-text" style="margin-bottom:1.5rem;">Envíanos un correo y te responderemos a la
+                            brevedad.</p>
+                        <a href="mailto:cedemco.eco@virtual.uady.mx" class="btn btn-primary" style="width:100%;">
+                            <i class="fa-solid fa-envelope"></i> Enviar Correo
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-form">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <h3 class="card-title">Formulario</h3>
+                        <p class="card-text" style="margin-bottom:1.5rem;">Llena nuestro formulario oficial y nos
+                            pondremos en contacto contigo.</p>
+                        <a href="contacto.html" class="btn btn-secondary" style="width:100%;">
+                            <i class="fa-solid fa-arrow-right"></i> Ir al Formulario
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="images/CEDEMCO_LOGO.png" alt="CEDEMCO" class="footer-logo" loading="lazy">
+                    <p class="footer-desc">CEDEMCO es un centro de apoyo a los emprendedores. Asesoría empresarial,
+                        capacitación y acompañamiento para tu negocio.</p>
+                    <div class="footer-social" style="margin-top:1.25rem;">
+                        <a href="https://www.facebook.com/CEDEMCOUADY" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cedemco_uady/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Navegación</h4>
+                    <a href="index.html" class="footer-link">Inicio</a>
+                    <a href="#nosotros" class="footer-link">Nosotros</a>
+                    <a href="#servicios" class="footer-link">Servicios</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                    <a href="contacto.html" class="footer-link">Contacto</a>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contacto</h4>
+                    <a href="mailto:cedemco.eco@virtual.uady.mx" class="footer-link">
+                        <i class="fa-solid fa-envelope" style="margin-right:0.5rem;"></i>cedemco.eco@virtual.uady.mx
+                    </a>
+                    <a href="javascript:void(0)" onclick="openWhatsApp()" class="footer-link">
+                        <i class="fa-brands fa-whatsapp" style="margin-right:0.5rem;"></i>+52 999 335 8915
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span class="dynamic-year"></span> CEDEMCO — Centro de Emprendimiento. Todos los derechos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="javascript:void(0)" onclick="openWhatsApp()" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script>
+        // Cargar los 3 artículos más recientes en el preview
+        document.addEventListener('DOMContentLoaded', function () {
+            loadBlogArticles('blog-preview-grid', 3);
+        });
+    </script>
+</body>
+
+</html>

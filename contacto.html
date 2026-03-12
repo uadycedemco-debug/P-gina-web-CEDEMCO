@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | CEDEMCO</title>
+    <meta name="description" content="Contáctanos por WhatsApp, correo electrónico o llena nuestro formulario. Estamos aquí para ayudarte a emprender.">
+    <link rel="icon" type="image/png" href="images/CEDEMCO_LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="nav-container" id="main-nav">
+        <div class="nav-top">
+            <div class="nav-col nav-col-left">
+                <button class="hamburger-btn" onclick="toggleMenu()" aria-label="Menú">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-social">
+                    <a href="https://www.facebook.com/CEDEMCOUADY" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cedemco_uady/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="nav-col nav-col-center">
+                <a href="index.html"><img src="images/CEDEMCO_LOGO.png" alt="CEDEMCO" class="nav-logo"></a>
+            </div>
+            <div class="nav-col nav-col-right">
+                <a href="contacto.html" class="nav-contact-btn">Contáctanos</a>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="index.html#nosotros" class="nav-link">Nosotros</a>
+            <a href="index.html#servicios" class="nav-link">Servicios</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="index.html" class="mobile-menu-link" onclick="toggleMenu()">Inicio</a>
+            <a href="index.html#nosotros" class="mobile-menu-link" onclick="toggleMenu()">Nosotros</a>
+            <a href="index.html#servicios" class="mobile-menu-link" onclick="toggleMenu()">Servicios</a>
+            <a href="blog.html" class="mobile-menu-link" onclick="toggleMenu()">Blog</a>
+            <a href="contacto.html" class="mobile-menu-link" onclick="toggleMenu()">Contacto</a>
+        </div>
+        <div class="mobile-menu-social">
+            <a href="https://www.facebook.com/CEDEMCOUADY" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/cedemco_uady/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <h1>CONTÁCTANOS</h1>
+        <p>Estamos aquí para apoyarte en tu camino emprendedor. Elige el medio que prefieras.</p>
+    </header>
+
+    <main>
+        <!-- OPCIONES DE CONTACTO -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-3 animate-fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3 class="card-title">WhatsApp</h3>
+                        <p class="card-text">Escríbenos directamente y recibe atención inmediata de nuestro equipo.</p>
+                        <p class="small-text" style="margin:1rem 0 0.5rem;">+52 999 335 8915</p>
+                        <a href="javascript:void(0)" onclick="openWhatsApp()" class="btn btn-whatsapp" style="width:100%;margin-top:1rem;">
+                            <i class="fa-brands fa-whatsapp"></i> Abrir WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3 class="card-title">Correo Electrónico</h3>
+                        <p class="card-text">Envíanos un correo con tu consulta y te responderemos lo antes posible.</p>
+                        <p class="small-text" style="margin:1rem 0 0.5rem;">cedemco.eco@virtual.uady.mx</p>
+                        <a href="mailto:cedemco.eco@virtual.uady.mx" class="btn btn-primary" style="width:100%;margin-top:1rem;">
+                            <i class="fa-solid fa-envelope"></i> Enviar Correo
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" style="background:rgba(24,119,242,0.1);color:#1877F2;">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <h3 class="card-title">Redes Sociales</h3>
+                        <p class="card-text">Síguenos en nuestras redes sociales para estar al tanto de nuestras novedades.</p>
+                        <div style="display:flex;gap:1rem;justify-content:center;margin-top:1.5rem;">
+                            <a href="https://www.facebook.com/CEDEMCOUADY" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding:0.75rem 1.5rem;">
+                                <i class="fa-brands fa-facebook-f"></i> Facebook
+                            </a>
+                            <a href="https://www.instagram.com/cedemco_uady/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding:0.75rem 1.5rem;">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE MICROSOFT FORMS -->
+        <section class="section-alt">
+            <div class="container">
+                <div class="section-header animate-fade-in">
+                    <span class="section-tag">Formulario</span>
+                    <h2>ESCRÍBENOS TU CONSULTA</h2>
+                    <p>Llena nuestro formulario oficial y nuestro equipo se pondrá en contacto contigo.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="animate-fade-in" style="max-width:800px;margin:0 auto;">
+                    <div style="background:white;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--cedemco-gray-100);">
+                        <iframe
+                            src="https://forms.office.com/Pages/ResponsePage.aspx?id=dNmEfTpwz0S3kpA8o9uAQ7_AOEjvPOdDq07sRImzsmZUOFVGOUszRURTSEpaRkxGME44NE0yQTFIQy4u&embed=true"
+                            width="100%"
+                            height="700"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                            title="Formulario de Contacto CEDEMCO"
+                            style="border:none;display:block;">
+                            Cargando formulario...
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="images/CEDEMCO_LOGO.png" alt="CEDEMCO" class="footer-logo" loading="lazy">
+                    <p class="footer-desc">CEDEMCO es un centro de apoyo a los emprendedores. Asesoría empresarial, capacitación y acompañamiento.</p>
+                    <div class="footer-social" style="margin-top:1.25rem;">
+                        <a href="https://www.facebook.com/CEDEMCOUADY" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cedemco_uady/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Navegación</h4>
+                    <a href="index.html" class="footer-link">Inicio</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                    <a href="contacto.html" class="footer-link">Contacto</a>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contacto</h4>
+                    <a href="mailto:cedemco.eco@virtual.uady.mx" class="footer-link"><i class="fa-solid fa-envelope" style="margin-right:0.5rem;"></i>cedemco.eco@virtual.uady.mx</a>
+                    <a href="javascript:void(0)" onclick="openWhatsApp()" class="footer-link"><i class="fa-brands fa-whatsapp" style="margin-right:0.5rem;"></i>+52 999 335 8915</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span class="dynamic-year"></span> CEDEMCO — Centro de Emprendimiento. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="javascript:void(0)" onclick="openWhatsApp()" class="whatsapp-float" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
